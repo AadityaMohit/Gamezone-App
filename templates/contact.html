@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+<style>
+    body {
+        background-image: url('/static/bg5.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .facebook-icon {
+        color: #1877f2; /* Facebook blue color */
+    }
+    
+    .instagram-icon {
+        color: #bc2a8d; /* Instagram pink color */
+    }
+    
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+
+<section>
+    <h1 style="font-family: 'Press Start 2P', cursive; color: #ff6f61; font-size: 3rem; text-transform: uppercase; letter-spacing: 2px;">
+        Welcome to <span style="color: #fff; text-shadow: 2px 2px 4px #000;">Aaditya Mohit GameZone</span>
+    </h1>
+</section>
+<section>
+    <div class="container-lg bg-warning text-dark">
+    <h2 class="text-white">Get in Touch</h2>
+    <div class="contact-info">
+        <ul>
+            <b><li><strong>Email:</strong> <a href="aadityamohit0308.com">contact@gamezone.com</a></li>
+            <li><strong>Phone:</strong> +91 8540094216</li>
+            <li><strong>Address:</strong> 123 Gaming Street, Gameville</li></b>
+        </ul>
+    </div>
+</div>
+</section>
+<section>
+    <h2 class="text-white">Contact Form</h2>
+    <section class="contact-details">
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p class="text-warning">Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="contact-item">
+            <i class="far fa-envelope"></i>
+           <b><p class="text-warning ">Email: <a href="mailto:contact@gamezone.com">contact@gamezone.com</a></p></b> 
+        </div>
+    </section>
+
+<section>
+    <h2 class="text-white">Find Us on Social Media</h2>
+    <ul class="social-media-links">
+        <li>
+            <a href="https://www.facebook.com/aaditya.kour.9" target="_blank">
+                <i class="fab fa-facebook facebook-icon"></i> Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/mr.adityamohit/" target="_blank">
+                <i class="fab fa-instagram instagram-icon"></i> Instagram
+            </a>
+        </li>
+        <!-- Add more social media links as needed -->
+    </ul>
+</section>
+
+<section>
+    <h2 class="text-white">Business Hours</h2>
+    <p class="text-warning">We are open from Monday to Friday, 9:00 AM to 6:00 PM.</p>
+</section>
+{% endblock body %}

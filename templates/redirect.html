@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Congratulations{% endblock title %}
+{% block body %}
+<style>
+
+    .background {
+        background-image: url('/static/lop1.jpeg'); /* Replace 'your-image.jpg' with the actual image file path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .centered-content {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .title {
+        color: #0078d4;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      
+      .text {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+      
+      .dashboard-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0078d4;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      .dashboard-link:hover {
+        background-color: #00569e;
+      }
+      
+    
+</style>
+
+<div class="background">
+    <div class="centered-content">
+      <h1 class="title">Sign-In Successful</h1>
+      <p class="text">Welcome to AadityaMohit Gaming Zone. You are now a member of our community.</p>
+      <a class="dashboard-link" href="/home">Go to Dashboard</a>
+    </div>
+  </div>
+  
+
+  <div class="alert alert-info" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  </div>
+
+
+
+
+{% endblock body %}

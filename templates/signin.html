@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Sign in{% endblock title %}
+{% block body %}
+<style>
+    body {
+        background-image: url('/static/bg3.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+</style>
+{% comment %} /*<script>
+    function submitForm() {
+        // You can perform any necessary data validation or processing here
+        // Redirect the user to the specified page
+        window.location.href = "/redirect/";
+    }
+</script>*/ {% endcomment %}
+<div class="container my-4 mx-4">
+<form action="{% url "signin" %}" method="post">
+
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="name" class="form-label text-warning fs-4"><b>Name</b></label>
+        <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+        
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label text-warning fs-4"><b>Email address</b></label>
+        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
+        
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label text-warning fs-4"><b>Phone</b></label>
+        <input type="phone" class="form-control" id="phone" name="phone" aria-describedby="emailHelp">
+        
+    </div>
+    
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label text-primary fs-4" for="exampleCheck1"><b>Check me out</b></label>
+    </div>
+    <button type="submit" class="btn btn-primary fs-4">Submit</button>
+</form>
+</div>
+{% endblock body %}

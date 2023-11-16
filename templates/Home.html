@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<style>
+  /* Global Styles */
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('/static/bg6.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+  }
+
+  h1 {
+      font-size: 3rem;
+  }
+
+  /* Styles for the GameZone container */
+  .gamezone-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* Styles for the game cards */
+  .game-card {
+      width: 250px;
+      background: rgba(0, 0, 0, 0.7);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+  }
+
+  .game-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .game-card h2 {
+      font-size: 1.8rem;
+      margin: 10px 0;
+  }
+
+  .game-card p {
+      font-size: 1.2rem;
+  }
+
+  .game-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+  }
+
+  .play-button {
+      background: #ff6f61;
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: background 0.2s;
+  }
+
+  .play-button:hover {
+      background: #ff4f3e;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+  </div>
+  <h1 style="font-family: 'Press Start 2P', cursive; color: #ff6f61; font-size: 3rem; text-transform: uppercase; letter-spacing: 2px;">
+   
+    Welcome to <span style="color: #fff; text-shadow: 2px 2px 4px #000;">Aaditya Mohit GameZone</span>
+  </h1>
+  
+<!-- GameZone Container -->
+<div class="gamezone-container">
+  <!-- Game Card 1 -->
+  <div class="game-card"><h2>GTA-IV</h2>
+    <a href="https://www.topgames.com/play/Gta-Grand-Theft-Auto">
+        
+        <img src="/static/Gta-Grand-Theft-Auto..jpeg" alt="Game 1">
+        <button class="play-button">Play</button>
+    </a>
+</div>
+
+
+  <!-- Game Card 2 -->
+  <div class="game-card"><h2>GTA-IV</h2>
+    <a href="https://www.topgames.com/play/Pubg-Pixel-3">
+        
+        <img src="/static/Pubg-Pixel-3.jpeg" alt="Game 1">
+        <button class="play-button">Play</button>
+    </a>
+</div>
+
+  <!-- Add more game cards here -->
+</div>
+<button class="btn btn-warning" id="toggleSidebarButton">Toggle Sidebar</button>
+
+<!-- Sidebar -->
+<div class="sidebar hide-sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Messages</a>
+    <a href="#">Settings</a>
+</div>
+<!-- JavaScript for Game Actions (optional) -->
+<script>
+
+ 
+</script>
+
+
+{% endblock body %}
